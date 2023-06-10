@@ -1,13 +1,415 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: radial-gradient(circle, rgba(79, 79, 79, 1) 0%, rgba(43, 43, 43, 1) 53%);
+}
+
+/* Footer Start */
+.footer {
+  margin: 1% 0%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  opacity: .2;
+  font-size: 1.6vh;
+  font-weight: lighter;
+}
+
+/* Footer End */
+
+/* Navbar Start */
+.nav {
+  padding: 2% 5%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  background: rgb(75, 75, 75);
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
+
+.nav .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 116, 52);
+  font-size: 1rem;
+  align-items: center;
+  position: relative;
+}
+
+.nav .right {
+  position: relative;
+}
+
+.nav .left span {
+  color: white;
+  font-size: 2rem;
+}
+
+.nav ul {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav ul li {
+  margin: 0% 10%;
+  padding: 1vh 1vh;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.nav a {
+  padding: 1vh 1vh;
+  /* border: 1px solid red; */
+  color: rgb(255, 129, 70);
+  text-decoration: none;
+  letter-spacing: .2vh;
+  font-size: 2vh;
+  /* font-weight: bold; */
+}
+
+.active {
+  padding: 1vh 0vh;
+  border-bottom: .3vh solid white;
+
+}
+
+/* Navbar End */
+
+/* Body start */
+.body {
+  background: radial-gradient(circle, rgba(79, 79, 79, 1) 0%, rgba(43, 43, 43, 1) 53%);
+  height: 35.4rem;
+}
+
+/* Body End */
+
+/* Home Page Start */
+.main-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34.8rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-body .heading-text {
+  margin: 0% 20%;
+  /* border: 1px solid red; */
+  width: 50%;
+}
+
+.main-body .heading-text h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.main-body .heading-text span {
+  color: rgb(255, 104, 34);
+}
+
+.main-body .heading-text p {
+  margin: 3vh 0vh;
+  color: white;
+  opacity: .5;
+}
+
+.btn {
+  margin: 2vh 0vh;
+  padding: 2vh 4vh;
+  border-radius: 7vh;
+  background: transparent;
+  color: rgb(255, 104, 34);
+  border: .3vh solid rgb(255, 104, 34);
+  cursor: pointer;
+  transition-duration: .7s;
+}
+
+.btn:hover {
+  background: rgb(255, 104, 34);
+  color: white;
+}
+
+.main-body .right img {
+  margin-left: -16%;
+  width: 90%;
+}
+
+/* Home Page End */
+
+
+/* Services Page Start */
+.body-service {
+  background: radial-gradient(circle, rgba(79, 79, 79, 1) 0%, rgba(43, 43, 43, 1) 53%);
+
+}
+
+.body-service .head {
+  /* border: 1px solid red; */
+  /* background-color: #4158D0;
+  background-image: linear-gradient(43deg, #172d9c 0%, #c04bb8 46%, #f8b944e8 100%); */
+  background-image: linear-gradient(135deg, #3B2667 10%, #BC78EC 100%);
+  height: 16rem;
+  display: flex;
+  justify-content: center;
+}
+
+.body-service h1 {
+  margin: 4% 0%;
+  color: white;
+  position: relative;
+}
+
+.body-service h1::before {
+
+  content: 'Our team excels in creating bespoke websites that reflect your brand identity and meet your specific requirements. From responsive design to seamless user experience, we ensure your website stands out and captivates your target audience.';
+
+  margin: 50% -130%;
+  height: 13rem;
+  width: 40rem;
+  padding: 10% 20%;
+  border-radius: 1vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: lighter;
+  position: absolute;
+  background: rgb(71, 71, 71);
+  line-height: 2;
+  letter-spacing: .2vh;
+  box-shadow: rgb(43, 43, 43) 0px 20px 30px -10px;
+}
+
+.card-box {
+  /* border: 1px solid red; */
+  margin-top: 12%;
+  padding: 2% 0%;
+  color: white;
+}
+
+.provide-text {
+  margin: 1% 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  word-spacing: 1vh;
+  color: rgb(255, 104, 34);
+  /* border: 1px solid red; */
+}
+
+.card {
+  /* border: 1px solid rgb(121, 121, 121); */
+  margin: 6% 2%;
+  padding: 6vh 6vh;
+  width: 23rem;
+  /* height: 48vh; */
+  /* background-color: #2d2d2d;
+  background-image: linear-gradient(160deg, #2d2d2d 43%, #d46b41 100%); */
+
+  background: rgb(66, 66, 66);
+  border-radius: 5vh;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.521) 0px 15px 12px;
+}
+
+.card .header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  height: 10vh;
+  width: 10vh;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin-bottom: 2%;
+  box-shadow: rgba(43, 43, 44, 0.925) 0px 50px 100px -20px, rgba(0, 0, 0, 0.973) 0px 30px 60px -30px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-title {
+  margin: 10% 0%;
+  color: rgb(255, 104, 34);
+  font-size: 2.7vh;
+}
+
+.card .card-text {
+  text-align: justify;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.747);
+  font-size: 2.3vh;
+  font-weight: lighter;
+}
+
+/* .card button{
+  color: red;
+} */
+
+.cards-container {
+  margin: 3% 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Services Page End */
+
+
+/* About Page Start */
+.abt-container {
+  /* background: radial-gradient(circle, rgba(79, 79, 79, 1) 0%, rgba(43, 43, 43, 1) 53%); */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.abt-left {
+  width: 85%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abt-left .abt-card {
+  margin: 0% 12%;
+  padding: 5% 7%;
+  /* border: 1px solid gray; */
+  color: white;
+}
+
+.abt-left .abt-card h1 {
+  color: rgb(255, 104, 34);
+}
+
+.abt-left .abt-card p {
+  padding: 7% 0%;
+  /* text-align: justify; */
+  line-height: 3.8vh;
+  font-style: italic;
+  opacity: .7;
+}
+
+.abt-right {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ffb46e 100%);
+  width: 100%;
+  height: 85vh;
+  border-radius: 50vh 0vh 0vh 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+/* About Page End */
+
+
+/* Contact Page Start */
+.cnt-container {
+  margin: 4% 4%;
+  display: flex;
+  justify-content: center;
+}
+
+.cnt-left {
+  width: 100%;
+}
+
+.cnt-right {
+  padding: 3% 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(255, 104, 34);
+  border-radius: 18vh 0vh 18vh 0vh;
+}
+
+.cnt-right h2{
+  color: white;
+}
+
+.cnt-right .form{
+  margin: 4% 0%;
+  padding-left: 3%;
+  width: 75%;
+}
+
+.cnt-right .form .fname,.lname,.email,.comment{
+  margin: 7% 2%;
+  padding: 0vh 2vh;  
+  height: 6vh;
+  border-bottom: 1px solid rgb(255, 104, 34);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-weight: lighter;
+  font-size: 2.2vh;
+  transition-duration: .4s;
+}
+
+.cnt-right .form input:focus{
+  border-bottom: 1px solid white;
+}
+.cnt-right .form .comment:focus{
+  border-bottom: 1px solid white;
+}
+.cnt-right .form .btn:focus{
+  border-bottom: none;
+}
+
+.cnt-right .form .email,.comment{
+  width: 90%;
+}
+
+.cnt-right .form .btn{
+  width: 30%;
+}
+
+/* Contact Page End */
+
+
+
+
+@media (max-width:768px) {
+  .blockphone{
+    display: none;
+  }  
+  .showInPhone{
+    display:block !important;
+  }
+  body{
+    background: white;
+  }
+}
+.showInPhone{
+  display: none;
 }
