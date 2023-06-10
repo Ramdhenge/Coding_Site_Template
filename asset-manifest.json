@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Coding_Site_Template/static/css/main.cac2087c.css",
+    "main.js": "/Coding_Site_Template/static/js/main.84129436.js",
+    "static/media/HomeImg.png": "/Coding_Site_Template/static/media/HomeImg.2ae73e6026b3bc86b38d.png",
+    "static/media/contact.png": "/Coding_Site_Template/static/media/contact.3e6e4a128b348c044cba.png",
+    "static/media/about.png": "/Coding_Site_Template/static/media/about.bc8cd4a747216ce123ce.png",
+    "static/media/mongo.png": "/Coding_Site_Template/static/media/mongo.2da4f3a0b8ac9572a408.png",
+    "static/media/js.png": "/Coding_Site_Template/static/media/js.5c954ccb0b7c87b73399.png",
+    "static/media/node.png": "/Coding_Site_Template/static/media/node.7641015d9932fdde2354.png",
+    "static/media/react.png": "/Coding_Site_Template/static/media/react.ffffe7d0101d0e48bf58.png",
+    "static/media/css.png": "/Coding_Site_Template/static/media/css.7ab03b9f1a760e1a5426.png",
+    "static/media/html.png": "/Coding_Site_Template/static/media/html.0f8b10c5fc9bc7805278.png",
+    "index.html": "/Coding_Site_Template/index.html",
+    "main.cac2087c.css.map": "/Coding_Site_Template/static/css/main.cac2087c.css.map",
+    "main.84129436.js.map": "/Coding_Site_Template/static/js/main.84129436.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cac2087c.css",
+    "static/js/main.84129436.js"
+  ]
+}
