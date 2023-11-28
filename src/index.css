@@ -395,21 +395,3 @@ body {
 }
 
 /* Contact Page End */
-
-
-
-
-@media (max-width:768px) {
-  .blockphone{
-    display: none;
-  }  
-  .showInPhone{
-    display:block !important;
-  }
-  body{
-    background: white;
-  }
-}
-.showInPhone{
-  display: none;
-}

@@ -10,8 +10,6 @@ root.render(
       <div className='blockphone'>
         <App />
       </div>
-      <h2 className='showInPhone'>Bola tha responsive nahi hai</h2>
-      <h4 className='showInPhone'>Jaa Laptop/Desktop me open kr</h4>
     </>
   </BrowserRouter>
 );
